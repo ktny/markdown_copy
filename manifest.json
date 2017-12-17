@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Markdown Copy",
+  "version": "0.1",
+  "browser_action": {
+    "default_title": "Markdown Copy"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "tabs",
+    "contextMenus"
+  ]
+}
