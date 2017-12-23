@@ -29,7 +29,7 @@ function copyByContextMenu(info) {
     var srcUrl = info.srcUrl;
     var linkUrl = info.linkUrl;
     var selectionText = info.selectionText;
-    var isSelectedText = typeof selectionText === 'undefined';
+    var isSelectedText = typeof selectionText !== 'undefined';
 
     var ta = document.createElement('textarea');
 
@@ -38,7 +38,7 @@ function copyByContextMenu(info) {
         ta.value = '![altテキスト](' + srcUrl + ')';
 
     // コンテキストメニューを出した場所がリンクの場合、リンクを表示するMD形式の文字列を作成
-    } else if (typeof linkUrl === 'undefined') {
+    } else if (typeof linkUrl !== 'undefined') {
         if (isSelectedText) {
             ta.value = '[' + selectionText + '](' + linkUrl + ')';
         } else {
