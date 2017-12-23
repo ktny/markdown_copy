@@ -66,4 +66,15 @@ function copyByBrowserAction(tab) {
     ta.select();
     document.execCommand('copy');
     document.body.removeChild(ta);
+
+    // デスクトップ通知。うざいのでコメントアウト
+    // chrome.notifications.create(
+    //     null,
+    //     {
+    //         'type': 'basic',
+    //         'iconUrl': 'icon.png',
+    //         'title': 'Markdown copy',
+    //         'message': 'タイトルとURLをMarkdown形式でコピーしました',
+    //     }
+    // );
 }
