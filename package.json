@@ -1,0 +1,25 @@
+{
+  "name": "markdown_copy",
+  "version": "1.0.0",
+  "description": "[Markdown Copy - Chrome ウェブストア](https://chrome.google.com/webstore/detail/markdown-copy/njmkhecfpmcbfkajeghcjamjjmbflmmb?hl=ja)",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ktny/markdown_copy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ktny/markdown_copy/issues"
+  },
+  "homepage": "https://github.com/ktny/markdown_copy#readme",
+  "devDependencies": {
+    "@types/chrome": "^0.0.193",
+    "typescript": "^4.7.4"
+  }
+}
